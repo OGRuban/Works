@@ -99,7 +99,7 @@ class MySuperClass:
     @classmethod
     def create_from_surname_name(cls, full_name:str):
         """ альтернативний конструктор, створюємо обєкт з повного імені
-        розчеплюємо повне імя на частинки Прізвище та Імя
+        розчеплюємо повне імя на частинки Прізкище та Імя
         """
         surname, name = full_name.split(" ")
         return cls(surname, name, 0)
@@ -107,7 +107,7 @@ class MySuperClass:
     @classmethod
     def create_from_name_surname(cls, full_name:str):
         """ альтернативний конструктор, створюємо обєкт з повного імені
-        розчеплюємо повне імя на частинки Імя та Прізвище
+        розчеплюємо повне імя на частинки Прізкище та Імя
         """
         name, surname = full_name.split(" ")
         return cls(surname, name, 0)
